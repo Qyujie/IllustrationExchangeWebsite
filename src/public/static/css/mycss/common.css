@@ -1,0 +1,37 @@
+/* 这个玩意儿是用来取消所有bootstrap中的btn类样式的点击出现的虚线的 */
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+}
+
+
+/* 去掉点击a时出现的虚线 */
+
+a:focus,
+a:active:focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a.active.focus {
+    outline: none;
+}
+
+
+/* 超链接没有下划线 */
+
+a {
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: #f2f2f2 !important;
+}

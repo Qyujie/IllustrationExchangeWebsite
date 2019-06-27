@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+
+<head>
+    <title>login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="static/js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="static/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="static/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <link href="static/css/mycss/commonStyle.css" rel="stylesheet" type="text/css" />
+    <link href="static/css/mycss/loginStyle.css" rel="stylesheet" type="text/css" />
+    <link href="static/css/mycss/common.css" rel="stylesheet" type="text/css" />
+    <script src="static/js/myjs/login/verification.js">
+    </script>
+    <script src="static/js/myjs/login/navBottom.js">
+    </script>
+    <script src="static/js/myjs/login/login.js">
+    </script>
+    <script src="static/js/myjs/login/regist.js"></script>
+</head>
+
+<body>
+
+    <!-- 这是引入的背景图片 -->
+    <embed src="static/common/bodydiv.html" class="bodydiv"></embed>
+    <!-- 这是一个音乐播放器 -->
+    <!-- <embed src="static/common/audio.html" id="audio-iframe"></embed> -->
+
+
+    <!--这是一个顶部的搜索导航-->
+    <div id="topNavigation-iframe" role="navigation">
+        <form method="get" action="">
+            <button class="btn btn-default" type="submit">
+				<span class="glyphicon glyphicon-search"></span>
+			</button>
+            <div class="input-group" id="div-navTopLoginSearch">
+                <input type="search" placeholder="Search" />
+            </div>
+        </form>
+    </div>
+
+
+
+    <!-- 这是一个底部的导航模块 -->
+    <div class="navbar-fixed-bottom navbar-inverse" id="nav-bottom">
+        <!-- 底部，反色 -->
+        <div class="div-dropup">
+            <div class="dropup" id="menu1">
+                <button class="btn dropdown-toggle " type="button" data-toggle="dropdown">
+					导航 <span class="glyphicon glyphicon-chevron-up"></span>
+				</button>
+                <ul class="dropdown-menu" role="menu">
+                    <!-- role用于照顾残障人士 -->
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/original">原创区</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/creations">同人区</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/contribute">投稿</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/home">首页</a></li>
+                </ul>
+            </div>
+            <div class="dropup" id="menu2">
+                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+					关于我们<span class="glyphicon glyphicon-chevron-up"></span>
+				</button>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">邱钰杰</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">蔡鸿宇</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 这是登录组件 -->
+    <div class="whitediv">
+        <div class="form-login">
+            <!-- 登录输入框组 -->
+            <div class="input-login">
+                <div>
+                    <input class="form-control" id="luser-value" name="name" placeholder="账号" />
+                </div>
+                <br />
+                <div>
+                    <input class="form-control " id="lpassword-value" name="password" type="password" placeholder="密码" />
+                </div>
+            </div>
+
+            <!-- 登录用户验证提示 -->
+            <div>
+                <span class="user-check-text glyphicon" id="lUserCheckResult" data-toggle="lUserTip" data-placement="right" title=""></span>
+            </div>
+            <br />
+            <div>
+                <span class="password-check-text glyphicon" id="lPasswordCheckResult" data-toggle="lPasswordTip" data-placement="right" title=""></span>
+            </div>
+
+            <!-- 登录按钮组 -->
+            <div class="button-login">
+                <div>
+                    <button class="btn btn-primary" id="lSubmit">登&#12288;&#12288;录</button>
+                </div>
+                <div class="div-empty-15"></div>
+                <div>
+                    <button class="btn btn-info" id="lRegist" data-toggle="modal" data-target="#myModal">注&#12288;&#12288;册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 这是一个模态的注册窗口 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content register-modal">
+                <button data-dismiss="modal" class="close button-close" type="button">
+					<span aria-hidden="true">×</span><span class="sr-only">Close</span>
+				</button>
+                <div class="form-login">
+                    <!-- 注册输入框组 -->
+                    <div class="input-login">
+                        <div>
+                            <input class="form-control" id="ruser-value" name="name" placeholder="账号" />
+                        </div>
+                        <br />
+                        <div>
+                            <input class="form-control " id="rpassword-value" name="password" type="password" placeholder="密码" />
+                        </div>
+                    </div>
+
+                    <!-- 注册用户验证提示 -->
+                    <div>
+                        <span class="user-check-text glyphicon" id="rUserCheckResult" data-toggle="rUserTip" data-placement="right" title=""></span>
+                    </div>
+                    <br />
+                    <div>
+                        <span class="password-check-text glyphicon" id="rPasswordCheckResult" data-toggle="rPasswordTip" data-placement="right" title=""></span>
+                    </div>
+                    <!-- 注册按钮组 -->
+                    <div class="button-login">
+                        <div>
+                            <button class="btn btn-info" id="rSubmit" disabled="disabled">注&#12288;&#12288;册</button>
+                        </div>
+                        <div class="div-empty-15"></div>
+                        <div>
+                            <button class="btn btn-default" data-toggle="modal" data-target="#myModal">关&#12288;&#12288;闭</button>
+                        </div>
+                    </div>
+                    <!-- formdiv -->
+                </div>
+                <!-- whitediv -->
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+
+</body>
+
+</html>

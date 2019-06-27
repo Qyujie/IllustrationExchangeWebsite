@@ -1,0 +1,110 @@
+#div-collections {
+    position: relative;
+    margin: 20px auto;
+    background-color: rgba(20, 185, 200, 0.1);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#imgs {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.div-img {
+    position: relative;
+    float: left;
+    background-color: #fff;
+}
+
+.div-img img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.img {
+    position: relative;
+    margin-bottom: 5px;
+    background-color: rgba(39, 4, 238, .1);
+    background-size: cover;
+}
+
+.img:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: inherit;
+    filter: blur(3px);
+    overflow: hidden;
+}
+
+.like {
+    margin-right: 5px;
+    font-size: 180%;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.likenum {
+    position: absolute;
+    top: 0;
+    font-size: 140%;
+    color: rgba(0, 0, 0, 0.7);
+    cursor: default;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+    z-index: 10;
+}
+
+.div-title {
+    margin-bottom: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.div-title:hover {
+    text-decoration: underline;
+}
+
+.div-date {
+    margin-bottom: 5px;
+    text-align: center;
+    cursor: default;
+}
+
+.div-author {
+    position: relative;
+    height: 60px;
+    width: 200px;
+    margin: 0 auto 5px;
+    background-color: rgba(0, 217, 255, .1);
+}
+
+.authorhead {
+    height: 50px;
+    width: 50px;
+    border-radius: 27px;
+    margin: 5px 10px;
+    float: left;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.author {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 70px;
+    right: 0;
+    height: 30%;
+    margin: auto;
+}

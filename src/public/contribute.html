@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="static/js/jquery/2.0.0/jquery.min.js"></script>
+    <script src="static/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <script src="static/js/myjs/common/buttonTop.js"></script>
+    <script src="static/js/myjs/common/modelTip.js"></script>
+    <!-- 这是顶部的导航栏 -->
+    <script src="static/js/myjs/common/navtop/navTopCreate.js"></script>
+    <script src="static/js/myjs/contribute/checkbox.js"></script>
+    <script src="static/js/myjs/contribute/wordsNumber.js"></script>
+    <script src="static/js/myjs/contribute/upload.js"></script>
+    <link href="static/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="static/css/mycss/commonStyle.css" rel="stylesheet" type="text/css" />
+    <link href="static/css/mycss/contributeStyle.css" rel="stylesheet" type="text/css" />
+    <link href="static/css/mycss/common.css" rel="stylesheet" type="text/css" />
+    <link href="static/css/mycss/myIconfont/iconfont.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <!-- 这是投稿信息编辑内容的div -->
+    <div class="panel panel-info div-contribute">
+        <div class="panel-heading">投稿</div>
+        <!-- 上传信息 -->
+        <div class="panel-body" id="div-contributeBody">
+
+            <div class="upload-tip">
+                <span>提示：标记</span>
+                <span class="dot1">●</span>
+                <span>为必填项，否则无法发布哦</span>
+            </div>
+
+            <!-- 图片 -->
+            <div class="title"><span class="dot">●</span>上传图片<span class="upload-tip">(提示：点击图片可删除哦)</span></div>
+
+            <div id="div-upload">
+                <div id="div-img">
+                    <div id="div-headPortrait">
+                        <span class="iconfont icon-add"></span>
+                    </div>
+                </div>
+                <input type="file" name="file" accept="image/jpeg,image/png" multiple="multiple" class="input-headPortrait" />
+                <div class="tip">最多可上传20张哦 (支持格式 jpg、png，宽高尺寸须大于420像素)</div>
+
+            </div>
+
+            <hr class="hr-split" />
+
+            <!-- 作品属性 -->
+            <div class="upload-type" id="workAttribute">
+                <span class="upload-title-text"><span class="dot">●</span>作品属性</span>
+                <div class="div-checkbox">
+                    <span class="iconfont icon-unchecked" id="tbox" value="0"></span>
+                    <span class="text">同人</span>
+                </div>
+                <div class="div-checkbox">
+                    <span class="iconfont icon-unchecked" id="ybox" value="1"></span>
+                    <span class="text">原创</span>
+                </div>
+            </div>
+
+            <!-- 作品分类 -->
+            <div class="upload-type" id="workClassification">
+                <span class="upload-title-text"><span class="dot">●</span>作品分类</span>
+                <div class="div-checkbox">
+                    <span class="iconfont icon-unchecked" id="mbox" value="0"></span>
+                    <span class="text">漫画</span>
+                </div>
+                <div class="div-checkbox">
+                    <span class="iconfont icon-unchecked" id="cbox" value="1"></span>
+                    <span class="text">插画</span>
+                </div>
+                <div class="div-checkbox">
+                    <span class="iconfont icon-unchecked" id="qbox" value="2"></span>
+                    <span class="text">其它</span>
+                </div>
+            </div>
+
+            <!-- 作品标题 -->
+            <div class="upload-title" id="workTitle">
+                <span class="upload-title-text"><span class="dot">●</span>作品标题</span>
+                <div class="div-text-input">
+                    <input type="text" placeholder="请输入标题" maxlength="20" class="form-control" id="title-input" />
+
+                </div><span class="text-length" id="titleNum">0/20</span>
+            </div>
+
+            <!-- 作品简介 -->
+            <div class="upload-title" id="workBriefIntroduction">
+                <span class="upload-intro-text">作品简介</span>
+                <div class="div-intro-input">
+                    <textarea maxlength="233" placeholder="请输入作品介绍，临摹作品请一定要注明作品的出处来源" cols="59" rows="5" class="form-control" id="intro-input"></textarea>
+
+                </div><span class="text-length-233" id="introNum">0/233</span>
+            </div>
+            <hr class="hr-split" />
+            <div id="submit">提交发布</div>
+        </div>
+    </div>
+</body>
+
+</html>

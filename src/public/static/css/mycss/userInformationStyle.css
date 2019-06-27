@@ -1,0 +1,88 @@
+body {
+    background-color: rgba(20, 185, 200, 0.1);
+}
+
+.div-userInformation {
+    width: 80%;
+    /* background-color:rgba(20,185,200,0.1); */
+    margin: 20px auto 20px;
+}
+
+
+/* 基本信息块 */
+
+.panel {
+    border: none;
+    border-radius: 16px;
+}
+
+.panel-heading {
+    font-size: 150%;
+    border: none;
+    border-radius: 16px 16px 0 0;
+}
+
+#div-userInformationBody {
+    width: 60%;
+    margin: 0 auto;
+    /* background-color:rgba(20,185,0,0.1); */
+}
+
+#div-headPortrait {
+    height: 150px;
+    width: 150px;
+    margin: 50px auto;
+    padding: 47px 54px;
+    border-radius: 75px;
+    background-color: rgba(0, 185, 20, 0.1);
+    background-size: cover;
+}
+
+#div-headPortrait span {
+    opacity: 0.4;
+    font-size: 300%;
+    /* background-color:red; */
+}
+
+#div-headPortrait span:hover {
+    cursor: pointer;
+}
+
+#div-headPortrait input {
+    display: none;
+}
+
+#div-userInformationBody button {
+    display: block;
+    margin: 50px auto;
+    width: 100px;
+    background-color: rgba(20, 185, 200, 1);
+}
+
+.row {
+    padding: 15px 0px 15px 0px;
+}
+
+.col-xs-4 {
+    /* background-color:rgba(120,0,90,0.4); */
+    text-align: right;
+    top: 3px;
+    left: 10px;
+    font-size: 120%;
+}
+
+.col-xs-8 input {
+    height: 30px;
+}
+
+.col-xs-8 select {
+    height: 30px;
+    width: 100px;
+    padding: 0px 8px;
+    float: left;
+    margin-right: 5px;
+}
+
+.col-xs-8 textarea {
+    resize: none;
+}

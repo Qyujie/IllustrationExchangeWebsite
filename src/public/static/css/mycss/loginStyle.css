@@ -1,0 +1,144 @@
+/* 登录窗口div */
+.whitediv{
+	width:450px;
+    height:310px;
+    background-color:rgba(255,255,255,0.9);
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius:5px;
+}
+
+.form-login{
+	position: relative;
+	top: 50px;
+}
+
+.input-login{
+	margin:0 auto;
+    width:280px;
+    height:120px;
+}
+
+
+.input-login input{
+	width:280px;
+}
+
+.button-login{
+    margin:0 auto;
+    width:150px;
+    height:50px;
+}
+
+.button-login button{
+	width:150px;
+}
+
+.user-check-text{
+	position:absolute;
+	left:85%;
+	top:6px;
+}
+
+.password-check-text{
+	position:absolute;
+	left:85%;
+	top:63px;
+}
+
+.div-empty-15{
+	height:15px;/* 这是用于div制造间隙 */
+}
+
+.button-close{
+	position:absolute;
+	right:15px;
+	top:10px;
+}
+
+
+/* 注册模态窗口 */
+#myModal{
+	top:150px;
+}
+
+.register-modal{
+	width:440px;
+    height:300px;
+    margin:0px auto;
+}
+
+/* 顶部搜索导航，实质是一个表单组 */
+
+#topNavigation-iframe{
+	position:absolute;
+	top: 20px;
+	left:20px;
+	background-color:rgba(255,255,255,0.9);
+	border-radius:15px;
+	width:450px;
+}
+
+#topNavigation-iframe button{
+	position:absolute;
+	top: 5px;
+	left:10px;
+	width:24px;
+    height:24px;
+	border: none;
+	border-radius:20px;
+	background-color:rgba(20,185,200,0);
+}
+
+#topNavigation-iframe button span{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+	color:rgba(20,185,200,1);
+}
+
+#div-navTopLoginSearch{
+	position:relative;
+	left:40px;
+	background-color:rgba(255,255,255,0);
+}
+
+#div-navTopLoginSearch input{
+	height: 35px;
+	width:395px;
+	border: none;
+	background-color: transparent;
+}
+
+
+/* 底部导航 */
+#nav-bottom{ 
+	height:30px;
+	background-color:rgba(34,34,34,0.9);
+}
+
+#nav-bottom ul{ 
+    bottom: 27px;
+    border-radius:0px;
+}
+
+#nav-bottom button{ 
+	border: none;
+	background-color: rgba(0,0,0, 0);
+	height:30px;
+	color:rgba(255,255,255, 0.3);
+	border-radius:0px
+}
+
+.dropup{
+	float:left;
+}
+
+.div-dropup{
+	position: relative;
+	left:15px;
+}
